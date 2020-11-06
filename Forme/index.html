@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World!!!</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Osnovne informacije</legend>
+            <p>
+                <label>
+                    <input type="text" value="ITBootcamp" disabled>
+                </label>
+            </p>
+            <p>
+            <label>Ime i prezime: </label>
+            <input type="text" placeholder="Unesite ime i prezime">
+            </p>
+            <p>
+                <label>Godine: </label>
+                <input type="number" value="18">
+            </p>
+
+            <p>
+                <label>Email: </label>
+                <input type="email">
+            </p>
+            <p>
+                <label>Password: </label>
+                <input type="password">
+            </p>
+
+            <p>
+                <label>Unesite datum leta: </label>
+                <input type="date" min="2020-12-1" max="2020-12-9" step="7">
+            </p>
+            <p>
+                <label> Unesite vreme: </label>
+                <input type="time">
+            </p>
+
+            <p>
+                <label></label>Odaberite pol: </label>
+                Neopredeljen<input type="radio" name="pol" value="n">
+                Zenski<input type="radio" name="pol" value="z">
+                Muski<input type="radio" name="pol" value="m">
+            </p>
+
+            <p>
+                <label>Odaberite kurs: </label>
+                Web programiranje <input type="radio" name="kurs" value="web">
+                QA <input type="radio" name="kurs" value="qa">
+            </p>
+            <p>
+                <label>Odaberite programske jezike</label>
+                PHP<input type="checkbox" name="prog" id="" value="php" checked> 
+                C<input type="checkbox" name="prog" id="" value="c"> 
+                JAVA<input type="checkbox" name="prog" id="" value="java">
+                JS<input type="checkbox" name="prog" id="" value="js"> 
+                PYTHON<input type="checkbox" name="prog" id="" value="python"> 
+            </p>
+
+            <p>
+                <label>Primer upotrebe color polja: </label>
+                <input type="color" value="#ff0000">
+            </p>
+            <p>
+                <label>Primer upotrebe file polja: </label>
+                <input type="file" size="50">                                                                       
+            </p>
+            <p>
+                <label>Najzanimljivija lekcija nedelje: </label>
+                 <select name="lista">
+                    <option value="osnovihtml">HTML</option>
+                    <option value="tabele">Tabele</option>
+                    <option value="liste">Liste</option>
+                </select>
+            </p>
+
+            <p>
+                <!--
+                    1.Beograd
+                        a.Web programiranje
+                        b.QA
+                        c.Java
+                    2.Nis
+                        a.Web programiranje
+                        b.QA
+                    3.Kosovo i Metohija
+                        a.Web
+                    4.Novi Sad
+                        a.Web programiranje
+                        b.QA   
+                -->
+                <label>Odaberite kurs:</label>
+                <select name="selectKurs">
+                    <optgroup label="Beograd">
+                        <option value="BgWeb">Web programiranje</option>
+                        <option value="BgQA">QA</option>
+                        <option value="BgJava">Java</option>
+                    </optgroup>
+
+                    <optgroup label="Nis">
+                        <option value="NisWeb">Web programiranje</option>
+                        <option value="NisQA">QA</option>
+                    </optgroup>
+
+                    <optgroup label="K i M">
+                        <option value="php">PHP</option>
+                    </optgroup>
+                    <optgroup label="Novi Sad">
+                        <option value="nsWeb">Web programiranje</option>
+                        <option value="nsQA">QA</option>
+                    </optgroup>
+                </select>
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legend>Ostale informacije</legend>
+        </fieldset>
+
+        <input type="button" value="pozdrav" onclick="alert('Pozdrav! :)')">
+        <input type="reset" value="resetuj!">
+        <input type="submit" value="posalji">
+        <textarea rows="10" cols="40"></textarea>
+    </form>
+</body>
+</html>
